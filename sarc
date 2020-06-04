@@ -5,7 +5,12 @@
 # Into
 # tHaT's A gOoD iDeA, tOm
 
-input=$(echo "$*" | tr '[:upper:]' '[:lower:]')
+if (( $# == 0 )) ; then
+  input=$(</dev/stdin)
+else
+  input="$*"
+fi
+input=$(echo "$input" | tr '[:upper:]' '[:lower:]')
 character_index=0
 should_uppercase="false"
 
@@ -29,6 +34,5 @@ do
   character_index=$(( character_index + 1 ))
 done
 
-echo "$output" | xclip -sel clip &> /dev/null
 echo "$output"
 echo "(copied to system clipboard)"
