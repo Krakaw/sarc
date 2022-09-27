@@ -1,6 +1,6 @@
 # Sarc
 
-Turn regular text into sarcastic text and copies it to the clipboard.
+Turn regular text into sarcastic text
 
 ## Example
 
@@ -12,4 +12,4 @@ Into
 
 ## Usage
 
-`sarc "The sentence you want to be sarcastic."`
+`sarc "The sentence you want to be sarcastic."` | pbcopy
