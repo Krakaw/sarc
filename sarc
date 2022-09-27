@@ -35,4 +35,3 @@ do
 done
 
 echo "$output"
-echo "(copied to system clipboard)"
